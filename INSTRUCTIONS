@@ -1,0 +1,42 @@
+AUTONEB Workflow
+By: Fang Liu and David Sanchez
+
+#Generate all the conformers into directory xyz/
+print "Usage: python generate.py -i [xyz_file] -b [idx,idx,bond order] -t [torsion_angle_specification_file] -m [xyz modification file]  [-r] [-v] [-T [check_time]] -d [unoptimized_xyz_file_path] --no_sorting --no_opt --smi [reference smi]"
+          -i   xyz file (Required)
+          -t   torsion angle specification (Required)
+               Format: 
+               atom1 atom2 atom3 atom4  angle1 angle2 angle3 angle4 ....
+          -r   Restart mode
+          -v   Verbose output
+          -m   xyz modification file
+          -T   Time interval to check whether the minimization jobs 
+               are finished
+          -b   Bonds to be created 
+          --smi reference SMILE string to prune wrong molecules
+          --no_sorting: do no sort the minimized structure
+          --no_opt: do not optimize the structures (usually used when we just want to create some new structures)
+          --localopt: do local optimization with pybel's internal force field after doing modification to the structures (currently only works with mode=3) 
+
+#Prune with distance spectrum 
+cd xyz #Need to be in the directory xyz/ generated above with your conformers
+print "Usage: python prune.py -e [energy_cutoff] -n [max_clusters -r [rmsd_threshold] -a [aligned_atoms] --smi [reference smi] -m [cluster_mode]"
+          -e   Energy cutoff for conformers. Positive flaot (kCal/mol)   # look for second line 
+          -n   Max number of clusters to be kept. Positive integer.      #
+          -r   RMSD threshold for conformers within a cluster
+          -a   List of aligned atoms IDs (0-indexed) seperated by comma
+               eg: "0, 3, 5"
+          --smi reference SMILE string to prune wrong molecules
+          -m   Clustering mode
+               0: by RMSD (Hungarian Algorithm) #This is very slow and should be used with under 10-15 structures
+               1: by dist spectrum
+
+#Optimize the pruned conformers
+cd .. #Move back to original working dir
+python generate.py -d xyz -m no.mod 
+        #Must have no.mod file in dir with 0 0 [eng, angles] as first line or will fail
+
+#Prune on smiley string and use Hungarian algorithm
+cd min_sorted
+python ../prune_class.py -r 0.1 -m 0 --smi "SMILEY HERE"
+        #For intermediates with many conformers set -n 10 for 10 clusters max
