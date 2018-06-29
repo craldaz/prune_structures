@@ -1,0 +1,280 @@
+Argument List: ['../prune_class.py', '-r', '0.1', '-m', '1']
+ 
+        ##########################
+        # Starting AUTO NEB run  #
+        ##########################
+        Prune the conformers by energy and clustering... 
+WARNING: Atoms to be aligned is not specified. 
+                      By default, all atoms will be aligned to reference
+                   
+WARNING: No reference SMILE string provided. Molecules will not be checked.
+Molecules will be clustered based on distance spectrum  
+My work directory is                     /home/caldaz/my_programs/prune_structures/tmp 
+Energy cutoff for conformers:            20 kCal/mol
+Max number of clusters:                  50 
+RMSD threshold for each cluster:         0.1 
+Following atoms will be aligned:         [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] 
+------------------------------------------------------
+
+
+conf0054.xyz -311.702178366
+conf0007.xyz -311.702178126
+conf0028.xyz -311.702171613
+conf0057.xyz -311.702166679
+conf0099.xyz -311.702165189
+conf0052.xyz -311.70216466
+conf0096.xyz -311.702161971
+conf0010.xyz -311.702160459
+conf0076.xyz -311.702160416
+conf0095.xyz -311.702158819
+conf0043.xyz -311.702158314
+conf0093.xyz -311.702157008
+conf0030.xyz -311.702155666
+conf0050.xyz -311.702155524
+conf0070.xyz -311.702153962
+conf0014.xyz -311.702153231
+conf0049.xyz -311.702152151
+conf0019.xyz -311.702150387
+conf0104.xyz -311.702149681
+conf0048.xyz -311.702149427
+conf0108.xyz -311.702147336
+conf0112.xyz -311.702147287
+conf0080.xyz -311.702146139
+conf0078.xyz -311.702145687
+conf0121.xyz -311.702144653
+conf0113.xyz -311.70213412
+conf0074.xyz -311.701941237
+conf0083.xyz -311.701918679
+conf0002.xyz -311.701918643
+conf0046.xyz -311.701915746
+conf0118.xyz -311.701914643
+conf0110.xyz -311.701912952
+conf0009.xyz -311.701908847
+conf0092.xyz -311.701908396
+conf0071.xyz -311.701905375
+conf0077.xyz -311.701905236
+conf0060.xyz -311.701905031
+conf0081.xyz -311.701905007
+conf0090.xyz -311.701904458
+conf0087.xyz -311.701897319
+conf0069.xyz -311.70184807
+conf0023.xyz -311.701845274
+conf0016.xyz -311.701844774
+conf0098.xyz -311.701843673
+conf0119.xyz -311.701839688
+conf0073.xyz -311.701839661
+conf0035.xyz -311.701835979
+conf0116.xyz -311.701835227
+conf0106.xyz -311.70183199
+conf0111.xyz -311.701823291
+conf0100.xyz -311.701809149
+conf0029.xyz -311.701599655
+conf0066.xyz -311.70159552
+conf0058.xyz -311.701581189
+conf0084.xyz -311.701574983
+conf0033.xyz -311.701567641
+conf0115.xyz -311.701562967
+conf0047.xyz -311.701558674
+conf0036.xyz -311.701556571
+conf0103.xyz -311.701556063
+conf0055.xyz -311.701555142
+conf0097.xyz -311.701554614
+conf0107.xyz -311.701554173
+conf0020.xyz -311.701552971
+conf0012.xyz -311.701549901
+conf0038.xyz -311.701543223
+conf0041.xyz -311.701538563
+conf0101.xyz -311.701538399
+conf0053.xyz -311.701532843
+conf0026.xyz -311.701532521
+conf0085.xyz -311.70153194
+conf0032.xyz -311.701525254
+conf0056.xyz -311.701521668
+conf0006.xyz -311.701519749
+conf0039.xyz -311.701513616
+conf0063.xyz -311.701509851
+conf0065.xyz -311.701483558
+conf0027.xyz -311.701388813
+conf0025.xyz -311.701385416
+conf0008.xyz -311.70138112
+conf0059.xyz -311.701380911
+conf0004.xyz -311.701373721
+conf0114.xyz -311.701371524
+conf0068.xyz -311.701367037
+conf0075.xyz -311.701362715
+conf0037.xyz -311.701357607
+conf0011.xyz -311.701352937
+conf0082.xyz -311.701351879
+conf0064.xyz -311.701342845
+conf0062.xyz -311.701340302
+conf0034.xyz -311.701276608
+conf0017.xyz -311.701274112
+conf0018.xyz -311.701271447
+conf0044.xyz -311.701267625
+conf0003.xyz -311.701258882
+conf0089.xyz -311.701151076
+conf0086.xyz -311.70103339
+conf0051.xyz -311.701030666
+conf0091.xyz -311.701020336
+conf0109.xyz -311.700995134
+conf0117.xyz -311.70084658
+conf0088.xyz -311.700846007
+conf0024.xyz -311.700750265
+conf0061.xyz -311.700739144
+conf0072.xyz -311.7006273
+conf0005.xyz -311.700590055
+conf0094.xyz -311.700584555
+('conf0054.xyz', -311.7021783663)
+('conf0007.xyz', -311.7021781262)
+('conf0028.xyz', -311.7021716127)
+('conf0057.xyz', -311.7021666787)
+('conf0099.xyz', -311.7021651891)
+('conf0052.xyz', -311.7021646605)
+('conf0096.xyz', -311.7021619714)
+('conf0010.xyz', -311.7021604591)
+('conf0076.xyz', -311.7021604158)
+('conf0095.xyz', -311.7021588187)
+('conf0043.xyz', -311.7021583137)
+('conf0093.xyz', -311.7021570083)
+('conf0030.xyz', -311.7021556655)
+('conf0050.xyz', -311.7021555244)
+('conf0070.xyz', -311.7021539624)
+('conf0014.xyz', -311.7021532306)
+('conf0049.xyz', -311.7021521507)
+('conf0019.xyz', -311.7021503869)
+('conf0104.xyz', -311.702149681)
+('conf0048.xyz', -311.7021494267)
+('conf0108.xyz', -311.7021473361)
+('conf0112.xyz', -311.7021472865)
+('conf0080.xyz', -311.7021461395)
+('conf0078.xyz', -311.7021456868)
+('conf0121.xyz', -311.7021446526)
+('conf0113.xyz', -311.7021341198)
+('conf0074.xyz', -311.7019412367)
+('conf0083.xyz', -311.7019186788)
+('conf0002.xyz', -311.7019186429)
+('conf0046.xyz', -311.7019157462)
+('conf0118.xyz', -311.7019146434)
+('conf0110.xyz', -311.7019129525)
+('conf0009.xyz', -311.7019088468)
+('conf0092.xyz', -311.7019083959)
+('conf0071.xyz', -311.7019053751)
+('conf0077.xyz', -311.7019052364)
+('conf0060.xyz', -311.7019050309)
+('conf0081.xyz', -311.7019050066)
+('conf0090.xyz', -311.7019044576)
+('conf0087.xyz', -311.7018973192)
+('conf0069.xyz', -311.7018480701)
+('conf0023.xyz', -311.7018452743)
+('conf0016.xyz', -311.7018447743)
+('conf0098.xyz', -311.7018436731)
+('conf0119.xyz', -311.7018396878)
+('conf0073.xyz', -311.7018396614)
+('conf0035.xyz', -311.7018359787)
+('conf0116.xyz', -311.701835227)
+('conf0106.xyz', -311.7018319899)
+('conf0111.xyz', -311.7018232912)
+('conf0100.xyz', -311.701809149)
+('conf0029.xyz', -311.701599655)
+('conf0066.xyz', -311.7015955198)
+('conf0058.xyz', -311.7015811886)
+('conf0084.xyz', -311.7015749832)
+('conf0033.xyz', -311.7015676414)
+('conf0115.xyz', -311.7015629673)
+('conf0047.xyz', -311.7015586735)
+('conf0036.xyz', -311.7015565712)
+('conf0103.xyz', -311.7015560625)
+('conf0055.xyz', -311.7015551415)
+('conf0097.xyz', -311.7015546141)
+('conf0107.xyz', -311.7015541731)
+('conf0020.xyz', -311.7015529709)
+('conf0012.xyz', -311.701549901)
+('conf0038.xyz', -311.7015432227)
+('conf0041.xyz', -311.701538563)
+('conf0101.xyz', -311.7015383986)
+('conf0053.xyz', -311.701532843)
+('conf0026.xyz', -311.7015325207)
+('conf0085.xyz', -311.7015319399)
+('conf0032.xyz', -311.701525254)
+('conf0056.xyz', -311.7015216684)
+('conf0006.xyz', -311.7015197491)
+('conf0039.xyz', -311.7015136156)
+('conf0063.xyz', -311.7015098509)
+('conf0065.xyz', -311.7014835579)
+('conf0027.xyz', -311.7013888129)
+('conf0025.xyz', -311.7013854162)
+('conf0008.xyz', -311.7013811197)
+('conf0059.xyz', -311.7013809107)
+('conf0004.xyz', -311.7013737211)
+('conf0114.xyz', -311.7013715242)
+('conf0068.xyz', -311.7013670373)
+('conf0075.xyz', -311.7013627152)
+('conf0037.xyz', -311.7013576069)
+('conf0011.xyz', -311.7013529373)
+('conf0082.xyz', -311.7013518787)
+('conf0064.xyz', -311.7013428453)
+('conf0062.xyz', -311.7013403015)
+('conf0034.xyz', -311.7012766083)
+('conf0017.xyz', -311.7012741122)
+('conf0018.xyz', -311.701271447)
+('conf0044.xyz', -311.7012676249)
+('conf0003.xyz', -311.7012588824)
+('conf0089.xyz', -311.7011510756)
+('conf0086.xyz', -311.7010333898)
+('conf0051.xyz', -311.7010306664)
+('conf0091.xyz', -311.7010203356)
+('conf0109.xyz', -311.7009951345)
+('conf0117.xyz', -311.7008465798)
+('conf0088.xyz', -311.700846007)
+('conf0024.xyz', -311.7007502654)
+('conf0061.xyz', -311.7007391436)
+('conf0072.xyz', -311.7006272997)
+('conf0005.xyz', -311.7005900546)
+('conf0094.xyz', -311.700584555)
+------------------------------------------------------
+
+
+2 . Prune conformers by geometry spectrum
+Updated number of effective conformers: 107
+------------------------------------------------------
+
+
+3 . Prune conformers by energy
+Conformers with energy higher than  20 kCal/mol are removed
+Remaining conformers are saved to all.xyz
+After pruning by energy, number of effective conformers: 107
+------------------------------------------------------
+
+
+4 Align all effective conformers to the lowest-energy conformer
+Checking existence of old file(s) all.xyz
+Old file(s)  all.xyz exist in currect directory
+Removed old file(s) to avoid confusion
+Wring out effective conformers to file: all.xyz
+Checking existence of old file(s) conf0054.pdb
+Old file(s)  conf0054.pdb exist in currect directory
+Removed old file(s) to avoid confusion
+Checking existence of old file(s) all_aligned.xyz
+Old file(s)  all_aligned.xyz exist in currect directory
+Removed old file(s) to avoid confusion
+------------------------------------------------------
+
+
+5 . Prune conformers by clustering
+Min pairwise rmsd: 0.000341 nm
+Max pairwise rmsd: 0.916918 nm
+Mean pairwise rmsd: 0.233916 nm
+11  clusters are generated
+{1: [103, 105, 106], 2: [102, 104], 3: [100], 4: [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50], 5: [54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 70], 6: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 80, 82, 87, 88, 89, 99], 7: [51, 52, 53, 90, 92, 94], 8: [91, 93, 101], 9: [96, 97, 98], 10: [69, 71, 72, 73, 74, 75, 76, 77, 78, 79, 81, 83, 84, 85, 86], 11: [95]}
+Checking existence of old file(s) cluster*.xyz
+Cluster 0 conformer id 0 Energy 0.0
+Cluster 1 conformer id 40 Energy 0.20726403899
+Cluster 2 conformer id 51 Energy 0.36314690104
+Cluster 3 conformer id 54 Energy 0.3786286926
+Cluster 4 conformer id 69 Energy 0.405274319298
+Cluster 5 conformer id 91 Energy 0.567428135864
+Cluster 6 conformer id 95 Energy 0.644634784487
+Cluster 7 conformer id 96 Energy 0.718483754738
+Cluster 8 conformer id 100 Energy 0.835708824615
+Cluster 9 conformer id 102 Energy 0.896147035987
+Cluster 10 conformer id 103 Energy 0.903126072355

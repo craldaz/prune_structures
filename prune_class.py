@@ -13,6 +13,7 @@ import scipy.cluster.hierarchy
 from scipy.spatial.distance import squareform
 from scipy.spatial import distance
 import kuhn_munkres as km
+import operator
 
 #Some constants
 kCaltoAu = 0.00159360109742136
@@ -155,6 +156,28 @@ class prune:
         printLine()
         self.step_+=1
         
+####################
+#  Read Conformers #
+####################
+    def readAndSortE(self):
+        names_to_energy={}
+        for filename in glob.glob("conf*xyz"):
+        	with open(filename) as f:
+        		lines = f.readlines()
+        	names_to_energy[filename]=float(lines[1])  #get energy from line 2
+        sorted_energies=sorted(names_to_energy.items(),key=operator.itemgetter(1)) #sort energy
+        count=0
+        for i in sorted_energies:
+        	print i[0],i[1]
+        self.numSortedMin_ = len(sorted_energies)
+        self.nameEnergyList_=[None]*self.numSortedMin_
+        for i in sorted_energies:  #print sorted files to list.txt
+            self.nameEnergyList_[count]=[str(i[0]),i[1]]
+            count+=1
+        for i in range(0,len(self.nameEnergyList_)):
+            print(self.nameEnergyList_[i][0], self.nameEnergyList_[i][1])
+        printLine()
+        self.step_ +=1
 
 ####################
 #  Read Conformers #
@@ -174,7 +197,7 @@ class prune:
         print 'Number of sorted, minimized conformers:',self.numSortedMin_
         
         self.nameEnergyList_=[None]*self.numSortedMin_
-        for i in range(2,self.numSortedMin_):
+        for i in range(0,self.numSortedMin_):
            #name='conf'+str(i)+'.xyz'
            name='conf'+'{:04}'.format(i)+'.xyz'
            energy=readXyzEnergy(name)
@@ -192,7 +215,8 @@ class prune:
         refE = self.nameEnergyList_[0][1]
         self.numEffectMin_ = 0
         for i in range(0,len(self.nameEnergyList_)):
-           deltaE = (self.nameEnergyList_[i][1] - refE)/kCaltoAu
+           deltaE = (self.nameEnergyList_[i][1] - refE)/kCaltoAu 
+           #print(deltaE)
            self.nameEnergyList_[i][1] = deltaE
            if deltaE > self.eThresh_:
               break
@@ -367,7 +391,8 @@ class prune:
             myFrameID = clusterEnergyList[i][0] 
             #self.t_aligned_[myFrameID].save_xyz(outputname)
             myOBMol=alignedmols[myFrameID].OBMol
-            info=str(clusterEnergyList[i][1])+' kcal/mol'
+            #info=str(clusterEnergyList[i][1])+' kcal/mol'
+            info=str(clusterEnergyList[i][1]/627.5)    #divide by 627.5 to convert back to hartree
             myOBMol.SetTitle(info)
             pybel.Molecule(myOBMol).write('xyz',outputname,overwrite=True)
             print 'Cluster',i,'conformer id',myFrameID, 'Energy',clusterEnergyList[i][1]
@@ -378,7 +403,8 @@ class prune:
     def run(self):
         self.readOpt()
         self.sanityCheck()
-        self.readConformers()
+        #self.readConformers()
+        self.readAndSortE()
         #self.fingerPrintChecking()            #CALDAZ TURNED OFFF
         self.geometricSpectrumChecking()
         self.pruneByEnergy()

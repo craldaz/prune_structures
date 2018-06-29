@@ -1,0 +1,74 @@
+Argument List: ['../prune_class.py', '-r', '0.1', '-m', '0']
+ 
+        ##########################
+        # Starting AUTO NEB run  #
+        ##########################
+        Prune the conformers by energy and clustering... 
+WARNING: Atoms to be aligned is not specified. 
+                      By default, all atoms will be aligned to reference
+                   
+WARNING: No reference SMILE string provided. Molecules will not be checked.
+Molecules will be clustered based on RMSD Computed byt Hungarian Algorithm  
+My work directory is                     /home/caldaz/my_programs/prune_structures/tmp2 
+Energy cutoff for conformers:            20 kCal/mol
+Max number of clusters:                  50 
+RMSD threshold for each cluster:         0.1 
+Following atoms will be aligned:         [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] 
+------------------------------------------------------
+
+
+conf0001.xyz 0.0
+conf0002.xyz 0.000330301257355
+conf0003.xyz 0.00057872016102
+conf0004.xyz 0.000603392338804
+conf0005.xyz 0.000645855488922
+conf0006.xyz 0.000904267945601
+conf0007.xyz 0.00102730642946
+conf0008.xyz 0.00114499403145
+conf0009.xyz 0.00133180689182
+conf0010.xyz 0.00142812276651
+conf0011.xyz 0.00143924473682
+('conf0001.xyz', 0.0)
+('conf0002.xyz', 0.000330301257355)
+('conf0003.xyz', 0.00057872016102)
+('conf0004.xyz', 0.000603392338804)
+('conf0005.xyz', 0.000645855488922)
+('conf0006.xyz', 0.000904267945601)
+('conf0007.xyz', 0.00102730642946)
+('conf0008.xyz', 0.00114499403145)
+('conf0009.xyz', 0.00133180689182)
+('conf0010.xyz', 0.00142812276651)
+('conf0011.xyz', 0.00143924473682)
+------------------------------------------------------
+
+
+2 . Prune conformers by geometry spectrum
+Updated number of effective conformers: 11
+------------------------------------------------------
+
+
+3 . Prune conformers by energy
+Conformers with energy higher than  20 kCal/mol are removed
+Remaining conformers are saved to all.xyz
+After pruning by energy, number of effective conformers: 11
+------------------------------------------------------
+
+
+4 Align all effective conformers to the lowest-energy conformer
+Checking existence of old file(s) all.xyz
+Wring out effective conformers to file: all.xyz
+Checking existence of old file(s) conf0001.pdb
+Checking existence of old file(s) all_aligned.xyz
+------------------------------------------------------
+
+
+5 . Prune conformers by clustering
+Min pairwise rmsd: 0.048825 nm
+Max pairwise rmsd: 0.148586 nm
+Mean pairwise rmsd: 0.108414 nm
+3  clusters are generated
+{1: [8, 9, 10], 2: [4, 6, 7], 3: [0, 1, 2, 3, 5]}
+Checking existence of old file(s) cluster*.xyz
+Cluster 0 conformer id 0 Energy 0.0
+Cluster 1 conformer id 4 Energy 0.405280524698
+Cluster 2 conformer id 8 Energy 0.835721620658
